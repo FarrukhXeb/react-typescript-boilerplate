@@ -1,27 +1,31 @@
-import React, { Suspense } from 'react';
+import React, { ReactElement, Suspense } from 'react';
 import { Link, Route, Switch } from 'react-router-dom';
+import routes from './routes';
 
-const About = React.lazy(() => import('./About'));
-const Home = React.lazy(() => import('./Home'));
-
-function App(): JSX.Element {
+function App(): ReactElement {
     return (
         <div>
             <header>
                 <ul>
-                    <li>
-                        <Link to='/'>Home</Link>
-                    </li>
-                    <li>
-                        <Link to='/about'>About</Link>
-                    </li>
+                    {routes.map((route) => {
+                        const { path, name } = route;
+                        return (
+                            <li key={name}>
+                                <Link to={path}>{name}</Link>
+                            </li>
+                        );
+                    })}
                 </ul>
             </header>
             <section>
                 <Suspense fallback={<div>loading....</div>}>
                     <Switch>
-                        <Route exact path='/' component={Home} />
-                        <Route path='/about' component={About} />
+                        {routes.map((r) => {
+                            const { path, component: Component, exact } = r;
+                            return (
+                                <Route key={path} exact={exact} path={path} component={Component} />
+                            );
+                        })}
                     </Switch>
                 </Suspense>
             </section>

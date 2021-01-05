@@ -1,9 +1,9 @@
 import React, { ReactElement } from 'react';
 
-export default function About(): ReactElement {
+export default function Login(): ReactElement {
     return (
         <div>
-            <h1>About Screen</h1>
+            <h1>Login page</h1>
         </div>
     );
 }
