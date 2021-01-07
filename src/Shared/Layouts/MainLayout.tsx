@@ -6,7 +6,9 @@ const MainLayout: FC = ({ children }) => {
     return (
         <>
             <Header />
-            <section>{children}</section>
+            <div className='container'>
+                <section>{children}</section>
+            </div>
         </>
     );
 };

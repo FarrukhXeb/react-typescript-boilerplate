@@ -1,3 +1,23 @@
-.wrapper {
+// .wrapper {
+//     display: flex;
+// }
+.inner {
     display: flex;
+    align-items: center;
+}
+.leftNav {
+    flex-grow: 1;
+}
+.rightNav {
+    flex-grow: 1;
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        li {
+            a {
+                padding: 0.75em 1em;
+                display: block;
+            }
+        }
+    }
 }
