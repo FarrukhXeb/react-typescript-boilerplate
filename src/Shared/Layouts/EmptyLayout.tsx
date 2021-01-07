@@ -1,11 +1,7 @@
 import React, { FC } from 'react';
 import PropTypes from 'prop-types';
 
-interface EmptyLayoutProps {
-    children?: React.ReactNode;
-}
-
-const EmptyLayout: FC<EmptyLayoutProps> = ({ children }) => {
+const EmptyLayout: FC = ({ children }) => {
     return <section>{children}</section>;
 };
 

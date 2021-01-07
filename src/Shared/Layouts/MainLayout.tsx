@@ -2,11 +2,7 @@ import React, { FC } from 'react';
 import PropTypes from 'prop-types';
 import Header from '../Header';
 
-interface MainLayoutProps {
-    children?: React.ReactNode;
-}
-
-const MainLayout: FC<MainLayoutProps> = ({ children }) => {
+const MainLayout: FC = ({ children }) => {
     return (
         <>
             <Header />
