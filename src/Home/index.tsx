@@ -1,9 +1,3 @@
-import React, { ReactElement } from 'react';
+import Home from './Home';
 
-export default function Home(): ReactElement {
-    return (
-        <div>
-            <h1>Home Screen</h1>
-        </div>
-    );
-}
+export default Home;

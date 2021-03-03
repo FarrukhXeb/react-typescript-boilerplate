@@ -2,14 +2,14 @@ import React, { FC } from 'react';
 import PropTypes from 'prop-types';
 
 const EmptyLayout: FC = ({ children }) => {
-    return <section>{children}</section>;
+  return <main>{children}</main>;
 };
 
 export default EmptyLayout;
 EmptyLayout.propTypes = {
-    children: PropTypes.element,
+  children: PropTypes.element,
 };
 
 EmptyLayout.defaultProps = {
-    children: null,
+  children: null,
 };

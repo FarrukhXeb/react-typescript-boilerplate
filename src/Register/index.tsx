@@ -1,9 +1,3 @@
-import React, { ReactElement } from 'react';
+import Register from './Register';
 
-export default function Register(): ReactElement {
-    return (
-        <div>
-            <h1>Register page</h1>
-        </div>
-    );
-}
+export default Register;

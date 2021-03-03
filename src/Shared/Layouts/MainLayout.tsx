@@ -3,21 +3,23 @@ import PropTypes from 'prop-types';
 import Header from '../Header';
 
 const MainLayout: FC = ({ children }) => {
-    return (
-        <>
-            <Header />
-            <div className='container'>
-                <section>{children}</section>
-            </div>
-        </>
-    );
+  return (
+    <>
+      <Header />
+      <main>
+        <div className='container'>
+          <section>{children}</section>
+        </div>
+      </main>
+    </>
+  );
 };
 
 export default MainLayout;
 MainLayout.propTypes = {
-    children: PropTypes.element,
+  children: PropTypes.element,
 };
 
 MainLayout.defaultProps = {
-    children: null,
+  children: null,
 };

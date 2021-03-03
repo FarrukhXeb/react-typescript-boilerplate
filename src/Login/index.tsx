@@ -1,9 +1,3 @@
-import React, { ReactElement } from 'react';
+import Login from './Login';
 
-export default function Login(): ReactElement {
-    return (
-        <div>
-            <h1>Login page</h1>
-        </div>
-    );
-}
+export default Login;
