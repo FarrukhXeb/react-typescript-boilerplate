@@ -1,4 +1,5 @@
 import { lazy } from 'react';
+
 import { MainLayout, EmptyLayout } from './Shared/Layouts';
 
 const routes: IRoute[] = [

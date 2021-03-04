@@ -1,18 +1,26 @@
+.wrapper {
+  background: #dedede;
+  padding: 1.5em 0;
+}
 .inner {
   display: flex;
   align-items: center;
 }
 .leftNav {
   flex-grow: 1;
+  h1 {
+    margin-bottom: 0;
+  }
 }
 .rightNav {
   flex-grow: 1;
   ul {
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 0;
     li {
+      padding: 0.75em 1em;
       a {
-        padding: 0.75em 1em;
         display: block;
       }
     }

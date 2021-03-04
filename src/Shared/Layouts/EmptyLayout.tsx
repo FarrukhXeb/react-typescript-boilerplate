@@ -1,8 +1,13 @@
 import React, { FC } from 'react';
+
 import PropTypes from 'prop-types';
 
 const EmptyLayout: FC = ({ children }) => {
-  return <main>{children}</main>;
+  return (
+    <div className='app-body'>
+      <main>{children}</main>
+    </div>
+  );
 };
 
 export default EmptyLayout;

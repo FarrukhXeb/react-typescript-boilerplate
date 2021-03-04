@@ -1,11 +1,13 @@
 import React, { FC, ReactElement } from 'react';
+
 import { Link } from 'react-router-dom';
+
 import style from './style.module.scss';
 
 const Header: FC = (): ReactElement => {
   return (
     <header className={style.wrapper}>
-      <div className='container'>
+      <div className='container-fluid'>
         <div className={style.inner}>
           <div className={style.leftNav}>
             <h1>Logo</h1>

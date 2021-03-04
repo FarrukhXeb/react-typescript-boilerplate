@@ -2,8 +2,10 @@ import React, { FC } from 'react';
 
 const Home: FC = () => {
   return (
-    <div>
-      <h1>Home Screen</h1>
+    <div className='row'>
+      <div className='col-12'>
+        <h1>Home page</h1>
+      </div>
     </div>
   );
 };

@@ -1,13 +1,16 @@
 import React from 'react';
+
 import ReactDOM from 'react-dom';
-import './index.scss';
 import { BrowserRouter as Router } from 'react-router-dom';
-import App from './App';
+
+import AppContainer from './AppContainer';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.scss';
 
 ReactDOM.render(
   <Router>
-    <App />
+    <AppContainer />
   </Router>,
   document.getElementById('root')
 );

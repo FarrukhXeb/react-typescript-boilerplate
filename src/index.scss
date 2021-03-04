@@ -1,17 +1,15 @@
 * {
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
+  margin: 0;
   font-family: sans-serif;
   list-style: none;
+  // transition: 0.1s all;
 }
 html {
   font-size: 14px;
 }
-.container {
-  max-width: 90%;
-  margin: 0 auto;
-}
+
 .app-body {
   display: flex;
   flex-grow: 1;
@@ -20,4 +18,12 @@ html {
   main {
     flex-grow: 1;
   }
+}
+.error {
+  border: 2px solid #ff6565;
+}
+.error-message {
+  color: #ff6565;
+  padding: 0.5em 0.2em;
+  font-size: 0.8em;
 }
